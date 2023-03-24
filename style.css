@@ -1,0 +1,365 @@
+* {
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: #668E68;
+}
+
+nav ul {
+    padding-top: 7px;
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+
+
+
+nav ul li a:hover {
+    color: #3a643c;
+}
+
+header {
+    background-image: url(./img/coffee.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 440px;
+}
+
+
+
+
+
+header h1 {
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 110px;
+    line-height: 177px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+main h1 {
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+}
+
+main a img {
+    width: 100%;
+    border: 10px solid #81613B;
+    border-radius: 50%;
+
+}
+
+main .picture {
+    position: relative;
+    transition: 1s;
+
+}
+
+main .picture:hover {
+    transform: scale(0.7, 0.7);
+}
+
+.bottom-center {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.8);
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.bottom-center h2 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+    padding-top: 20px;
+}
+
+.btn-main {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-main button {
+    border: none;
+    background-color: #668E68;
+    border-radius: 20px;
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    transition: 1s;
+}
+
+.btn-main button:hover {
+    background-color: #3a643c;
+}
+
+.btn-main button::after {
+    content: "";
+    background-image: url(./img/Vector.png);
+    background-repeat: no-repeat;
+    height: 20px;
+    width: 50px;
+    position: absolute;
+    right: -20px;
+    top: 13px;
+    background-size: 20%;
+    transition: 1s;
+}
+
+.btn-main button:hover::after {
+    translate: 15px;
+}
+
+article {
+    background-image: url(./img/cafe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    margin-top: 80px;
+}
+
+.about {
+    padding-top: 100px;
+
+}
+
+article .about h1 {
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+article .about h2 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+article .about-sec h2 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+section {
+    background-color: rgba(129, 97, 59, 0.2);
+}
+
+section .news h1 {
+    font-family: 'Shadows Into Light';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000;
+    padding-top: 80px;
+}
+
+section .text h1 {
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+}
+
+section .text {
+    border: 1px solid #668E68;
+    background: #FFFFFF;
+    padding: 20px;
+    /* margin-top: 30px; */
+}
+
+section .text span {
+    padding-left: 30px;
+}
+
+footer {
+    background-color: #000000;
+}
+
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    font-family: 'Yu Gothic';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    transition: 1s;
+}
+
+
+footer ul li a:hover {
+    color: #3a643c;
+}
+
+footer h1 {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: right;
+    color: #FFFFFF;
+}
+
+footer {
+    position: relative;
+}
+
+footer .btn-top {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    transition: 1s;
+}
+
+footer .btn-top:hover {
+    transform: scale(1.5, 1.5);
+}
+
+nav .one {
+    background-color: white;
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+
+nav .two {
+    background-color: white;
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+
+nav .three {
+    background-color: white;
+    height: 5px;
+    width: 50px;
+    border-radius: 10px;
+    margin-bottom: 7px;
+}
+
+.nav-hidden {
+    display: none;
+}
+
+
+
+
+@media(max-width: 992px) {
+    nav ul li {
+
+        padding-right: 10px;
+    }
+
+}
+
+
+@media(max-width: 768px) {
+    nav {
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+
+    footer h1 {
+        text-align: center;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav-hidden {
+        display: block;
+    }
+
+    .nav-right {
+        justify-content: right;
+    }
+
+
+
+
+
+}
+
+@media(max-width: 577px) {
+
+    header h1 {
+        font-size: 75px;
+    }
+
+    .nav-hidden {
+        /* margin-top: 10px; */
+
+    }
+
+    nav a img {
+        margin-bottom: 10px;
+    }
+
+    .nav-right {
+        justify-content: center;
+    }
+}
