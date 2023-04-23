@@ -129,9 +129,8 @@ window.onload = () => {
         let currentIndex = shoppingItems.length;
         let shopItemDiv = document.createElement('div');
         shopItemDiv.setAttribute('id', `shop-item-${currentIndex}`);
-        let pEl = document.createElement('li');
+        let pEl = document.createElement('p');
         pEl.innerHTML = `${shopItem.name} ${shopItem.createdAt}`;
-        pEl.className = "list-group-item";
         let buttonEl = document.createElement('button');
         buttonEl.innerHTML = 'BUY';
         buttonEl.className = "btn btn-primary";
