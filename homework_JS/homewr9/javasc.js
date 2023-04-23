@@ -115,13 +115,14 @@ window.onload = () => {
 
     function disableAndChangeBackground(id) {
         let shopItemDiv = document.querySelector(`#shop-item-${id}`);
-        shopItemDiv.setAttribute('style', 'background-color: gray;');
+        shopItemDiv.setAttribute('style', 'background-color: rgb(149, 153, 157);');
 
     }
 
     function addToBasket() {
         let shoppingList = document.querySelector("#shoppingList");
         let shoppingItemInput = document.querySelector(".shoppingItem");
+
 
 
         let shopItem = new ShoppingItem(shoppingItemInput.value, new Date())
@@ -131,20 +132,26 @@ window.onload = () => {
         shopItemDiv.setAttribute('id', `shop-item-${currentIndex}`);
         let pEl = document.createElement('p');
         pEl.innerHTML = `${shopItem.name} ${shopItem.createdAt}`;
+        pEl.className = "ps-3 pt-2 fw-medium";
         let buttonEl = document.createElement('button');
         buttonEl.innerHTML = 'BUY';
-        buttonEl.className = "btn btn-primary";
+        buttonEl.className = "btn btn-info w-25 ms-3 mb-2";
         buttonEl.setAttribute('id', `shop-item-button-${currentIndex}`);
         buttonEl.addEventListener('click', function () { disableAndChangeBackground(currentIndex) });
         shopItemDiv.append(pEl, buttonEl);
+        shopItemDiv.className = "card border-secondary w-50 mt-3 shadow rounded";
         shoppingList.appendChild(shopItemDiv);
     }
 
     let basketButton = document.querySelector("#addBasketButton");
     basketButton.addEventListener('click', addToBasket);
+    basketButton.className = "btn btn-primary";
 
     let taskFour = document.querySelector(".taskFour");
     taskFour.className = "p-3";
+
+    let shoppingItem = document.querySelector('.shoppingItem');
+    shoppingItem.classList.add('pb-2', 'pt-1', 'bg-info', 'bg-opacity-10', 'border', 'border-info', 'border-start', 'rounded-end', 'rounded-start');
 
 }
 
