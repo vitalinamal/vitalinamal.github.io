@@ -3,6 +3,13 @@ window.onload = () => {
     let movingBlockEl = null;
     let movingBlockElStyle = null;
     let blockElStyle = null
+    
+    // added to prevent scrolling when moving smaller div
+    window.addEventListener("keydown", function (e) {
+        if (["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
+            e.preventDefault();
+        }
+    }, false);
 
     function init() {
         movingBlockEl = document.querySelector(".movingBlock");
