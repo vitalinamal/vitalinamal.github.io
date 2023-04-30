@@ -69,23 +69,24 @@ window.onload = () => {
     let i = 0;
     let images = ["img/photo0.jpg", "img/photo1.jpg", "img/photo2.jpg"];
     let time = 3000;
-    let paused = false;
+    let timeout;
 
 
     let imgDiv = document.querySelector('.img');
     let img = document.createElement("img");
-    // img.src = "img/photo0.jpg";
-    img.addEventListener('mouseover', () => { paused = true });
-    img.addEventListener('mouseout', () => { paused = false; });
+    img.addEventListener('mouseover', pauseChange);
+    img.addEventListener('mouseout', handleChange);
     imgDiv.appendChild(img);
 
     function handleChange() {
         let img = document.querySelector('img');
-        img.src = `img/photo${i}.jpg`;
-        if (!paused) {
-            i >= images.length - 1 ? i = 0 : i++;
-        }
-        setTimeout(handleChange, time);
+        img.src = images[i];
+        i >= images.length - 1 ? i = 0 : i++;
+        timeout = setTimeout(handleChange, time);
+    }
+
+    function pauseChange() {
+        clearTimeout(timeout);
     }
 
     handleChange();
